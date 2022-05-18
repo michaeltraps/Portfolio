@@ -4,7 +4,7 @@ import './techstack.css'
 function Techstack() {
   return (
     <div>
-      
+      <h2>Techstack</h2>
     </div>
   )
 }

@@ -4,7 +4,7 @@ import './navbar.css';
 const Navbar = () => {
   return (
     <div>
-      <h2>From the Navbar component</h2>
+      <h2>Navbar</h2>
     </div>
   );
 };
