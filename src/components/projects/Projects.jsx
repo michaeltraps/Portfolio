@@ -7,31 +7,23 @@ function Projects({ imgUrl, title, github, url, description }) {
       <div className='trapani__experience-container_projects-image'>
         <img src={imgUrl} alt='project logo' />
       </div>
-      <div className='trapani__experience-container_content'>
+      <div className='trapani__experience-container_projects-content'>
         <div>
           <h3>{title}</h3>
-        </div>
-        <div>
           <p>{description}</p>
         </div>
-        <a
-          className='trapani__experience-container_projects-button'
-          href={github}
-          target='_blank'
-          rel='noreferrer'>
-          Github
-        </a>
-        {url ? (
-          <a
-            className='trapani__experience-container_projects-button'
-            href={url}
-            target='_blank'
-            rel='noreferrer'>
-            Website
+        <div className='trapani__experience-container_projects-button'>
+          <a href={github} target='_blank' rel='noreferrer'>
+            Github
           </a>
-        ) : (
-          ''
-        )}
+          {url ? (
+            <a href={url} target='_blank' rel='noreferrer'>
+              Website
+            </a>
+          ) : (
+            ''
+          )}
+        </div>
       </div>
     </div>
   );

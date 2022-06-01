@@ -1,0 +1,30 @@
+.trapani__experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.trapani__experience-heading {
+  width: 100%;
+  text-align: left;
+
+  margin-bottom: 3rem;
+}
+
+.trapani__experience-heading h2 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -0.04em;
+}
+
+.trapani__experience-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.trapani__experience-container_projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:2rem;
+}

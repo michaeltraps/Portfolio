@@ -29,9 +29,46 @@
 }
 
 .trapani__experience-container_projects-content h3 {
-  
+  font-family: var(--font-family);
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 40px;
 }
 
 .trapani__experience-container_projects-content p {
+  font-family: var(--font-family);
+  font-size: 15px;
+  line-height: 25px;;
+}
 
+.trapani__experience-container_projects-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 0.5rem 0;
+}
+
+.trapani__experience-container_projects-button a {
+  font-family: var(--font-family);
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 900;
+  background-color: #d2fdff;
+  margin: 0.5rem 1rem 0 0;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+}
+
+.trapani__experience-container_projects-button a:hover {
+  background-color: #303c6c;
+  color: white;
+}
+
+@media screen and (max-width: 550px) {
+  .trapani__experience-container_projects-content {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
