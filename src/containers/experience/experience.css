@@ -30,3 +30,25 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
 }
+
+@media screen and (max-width:990px) {
+  .trapani__experience-container {
+    flex-direction: column;
+  }
+  .trapani__experience-container_groupB .trapani__experience-container_projects-image {
+    height: 60%;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .trapani__experience-heading {
+    margin-bottom: 1rem;
+  }
+  .trapani__experience-heading h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .trapani__experience-container_groupB {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

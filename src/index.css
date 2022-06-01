@@ -5,7 +5,9 @@
 
   --color-bg: rgba(0, 19, 40, 1) 0%;
   --color-header: #b4dfe5;
-  --color-experience: #fbe8a6;
-  --color-footer: rgba(0, 19, 40, 1) 0%;  
+  --color-experience: #303c6c;
+  --color-footer: rgba(0, 19, 40, 1) 0%;
+  --color-button: #f4976c;
+  --color-button-hover: #fbe8a6;
   --color-text: #fff;
 }
