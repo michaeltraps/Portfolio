@@ -23,8 +23,10 @@
   flex-direction: row;
 }
 
-.trapani__experience-container_projects {
+.trapani__experience-container_groupB {
+  flex: 1;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap:2rem;
+  grid-gap: 2rem;
 }

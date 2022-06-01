@@ -10,7 +10,7 @@ const Experience = () => {
         <h2 className='gradient__text'>Experience</h2>
       </div>
       <div className='trapani__experience-container'>
-        <div className='trapani__experience-container_projects'>
+        <div className='trapani__experience-container_groupB'>
           <Projects
             imgUrl={squril}
             title='SQuril'
