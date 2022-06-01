@@ -12,7 +12,10 @@ const Menu = () => (
       <a href='#experience'>Experience</a>
     </p>
     <p>
-      <a href='#skills'>Skills</a>
+      <a href='#techstack'>Skills</a>
+    </p>
+    <p>
+      <a href='#footer'>Social</a>
     </p>
     <p>
       <a href='#resume'>Resume</a>

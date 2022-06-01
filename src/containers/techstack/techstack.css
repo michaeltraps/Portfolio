@@ -1,0 +1,19 @@
+.trapani__techstack {
+  display: flex;
+  flex-direction: column;
+}
+
+.trapani__techstack-heading {
+  width: 100%;
+  text-align: left;
+
+  margin-bottom: 3rem;
+}
+
+.trapani__techstack-heading h2 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -0.04em;
+}
