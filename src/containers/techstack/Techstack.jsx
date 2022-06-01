@@ -9,12 +9,13 @@ function Techstack() {
       <div className='trapani__techstack-heading'>
         <h2 className='gradient__text'>Techstack</h2>
       </div>
-      <div className='trapani__techstack-container'></div>
-      <Skills />
-      <Skills />
-      <Skills />
-      <Skills />
-      <Skills />
+      <div className='trapani__techstack-container_group'>
+        <Skills imgUrl={react} title='React' />
+        <Skills imgUrl={typescript} title='TypeScript' />
+        <Skills imgUrl={nodejs} title='NodeJS' />
+        <Skills imgUrl={sql} title='PostgreSQL' />
+        <Skills imgUrl={git} title='Git' />
+      </div>
     </div>
   );
 }

@@ -17,3 +17,17 @@
   line-height: 50px;
   letter-spacing: -0.04em;
 }
+
+.trapani__techstack-container_group {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width:990px) {
+  .trapani__techstack-container_group {
+    flex-direction: column;
+  }
+  .trapani__techstack-container_group .trapani__techstack-container_skills-image {
+    height: 10%;
+  }
+}
