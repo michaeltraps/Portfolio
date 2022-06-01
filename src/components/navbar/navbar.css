@@ -29,7 +29,7 @@
 
 .trapani__navbar-links_container p,
 .trapani__navbar-menu_container p  {
-  color: #fff;
+  color: var(--color-text);
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 18px;

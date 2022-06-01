@@ -1,0 +1,74 @@
+.trapani__header {
+  display: flex;
+}
+
+.trapani__header-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin-right: 5rem;
+}
+
+.trapani__header-content h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+
+  font-style: normal;
+  font-size: 50px;
+  line-height: 65px;
+  letter-spacing: -0.04em;
+}
+
+.trapani__header-content p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+}
+
+.trapani__header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trapani__header-image img {
+  width: 120%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  .trapani__header {
+    flex-direction: column;
+  }
+  .trapani__header-content {
+    margin: 0 0 3rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .trapani__header h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .trapani__header p {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .trapani__header h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .trapani__header h1 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

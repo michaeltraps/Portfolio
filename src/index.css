@@ -3,9 +3,9 @@
 :root {
   --font-family: 'Montserrat';
 
-  --color-bg: #303c6c;
-  --color-header: #FBE8A6;
-  --color-footer: #303c6c;
+  --color-bg: rgba(0, 19, 40, 1) 0%;
+  --color-header: #b4dfe5;
+  --color-blog: #fbe8a6;
+  --color-footer: rgba(0, 19, 40, 1) 0%;  
   --color-text: #fff;
-
 }
