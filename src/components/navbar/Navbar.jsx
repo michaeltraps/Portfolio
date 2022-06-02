@@ -21,9 +21,6 @@ const Menu = () => (
       <a href='#techstack'>Skills</a>
     </p>
     <p>
-      <a href='#footer'>Social</a>
-    </p>
-    <p>
       <a href={resume} download>
         Resume
       </a>

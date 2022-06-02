@@ -60,13 +60,12 @@
   font-weight: 900;
   background-color: var(--color-button);
   margin: 0.5rem 1rem 0 0;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem 1rem;
 }
 
 .trapani__experience-container_projects-button a:hover {
   background-color: var(--color-button-hover);
+  color:#b4dfe5;
 }
 
 @media screen and (max-width: 550px) {

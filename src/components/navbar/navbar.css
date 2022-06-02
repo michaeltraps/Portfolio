@@ -46,9 +46,18 @@
   font-size: 18px;
   line-height: 25px;
   text-transform: capitalize;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s;
 
   margin: 0 3rem;
   cursor: pointer;
+}
+
+.trapani__navbar-links_container p:hover {
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
 }
 
 .trapani__navbar-menu {
