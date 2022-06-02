@@ -24,10 +24,14 @@
 }
 
 @media screen and (max-width:990px) {
+  .trapani__techstack-container_skills{
+    align-items: center;
+  }
   .trapani__techstack-container_group {
     flex-direction: column;
+
   }
   .trapani__techstack-container_group .trapani__techstack-container_skills-image {
-    height: 10%;
+    width: 30%;
   }
 }

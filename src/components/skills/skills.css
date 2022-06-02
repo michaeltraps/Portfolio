@@ -11,12 +11,10 @@
   height: 100%;
   width: 100%;
   justify-content: center;
-  padding: 1.5rem;
 }
 
 .trapani__techstack-container_skills-image img {
-  height:50%;
-  width: 50%;
+  height:10rem;
 }
 
 .trapani__techstack-container_skills-header {
