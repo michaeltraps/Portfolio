@@ -15,10 +15,10 @@ const Menu = () => (
       <a href='#welcome'>Welcome</a>
     </p>
     <p>
-      <a href='#experience'>Experience</a>
+      <a href='#techstack'>Skills</a>
     </p>
     <p>
-      <a href='#techstack'>Skills</a>
+      <a href='#experience'>Experience</a>
     </p>
     <p>
       <a href={resume} download>

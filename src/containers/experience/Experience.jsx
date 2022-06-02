@@ -1,19 +1,67 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Projects } from '../../components';
+import { motion, useAnimation } from 'framer-motion';
 import { gitgood, goodwatch, nutritionx, squril } from './imports';
 import './experience.css';
 
+function useOnScreen(ref, rootMargin = '0px') {
+  const [isIntersecting, setIntersecting] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIntersecting(entry.isIntersecting);
+      },
+      {
+        rootMargin,
+      }
+    );
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+    return () => {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      observer.unobserve(ref.current);
+    };
+  }, [ref, rootMargin]);
+
+  return isIntersecting;
+}
+
 const Experience = () => {
+  const controls = useAnimation();
+  const rootRef = useRef();
+  const onScreen = useOnScreen(rootRef);
+  useEffect(() => {
+    if (onScreen) {
+      controls.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 0.5,
+          ease: 'easeOut',
+        },
+      });
+    }
+  }, [onScreen, controls]);
   return (
     <div className='trapani__experience section__padding' id='experience'>
-      <div className='trapani__experience-heading'>
+      <motion.div
+        className='trapani__experience-heading'
+        ref={rootRef}
+        initial={{ opacity: 0, y: 250 }}
+        animate={controls}>
         <h2 className='gradient__text'>Experience</h2>
         <p className='gradient__text'>
           I am a frequent contributor to the open source community
         </p>
-      </div>
+      </motion.div>
       <div className='trapani__experience-container'>
-        <div className='trapani__experience-container_groupB'>
+        <motion.div
+          className='trapani__experience-container_groupB'
+          ref={rootRef}
+          initial={{ opacity: 0, y: 250 }}
+          animate={controls}>
           <Projects
             imgUrl={squril}
             title='SQuril'
@@ -39,7 +87,7 @@ const Experience = () => {
             github='https://github.com/TeamNY31-VR/NutritionX'
             description='Nutrition tracker that allows users to track their meal nutrition info'
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
