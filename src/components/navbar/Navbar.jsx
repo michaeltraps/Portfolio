@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './navbar.css';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo_75.png';
+import resume from '../../assets/Michael_Trapani_Resume.pdf';
 
 const Menu = () => (
   <>
@@ -18,7 +19,9 @@ const Menu = () => (
       <a href='#footer'>Social</a>
     </p>
     <p>
-      <a href='#resume'>Resume</a>
+      <a href={resume} download>
+        Resume
+      </a>
     </p>
   </>
 );

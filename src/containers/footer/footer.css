@@ -1,0 +1,14 @@
+.trapani__footer {
+  background: var(--color-experience);
+  font-family: var(--font-family);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.trapani__footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
