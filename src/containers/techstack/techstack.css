@@ -29,8 +29,9 @@
 }
 
 .trapani__techstack-container_group {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
   margin-bottom: 1.5rem;
 }
 

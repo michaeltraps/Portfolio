@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Skills from '../../components/skills/Skills';
 import { motion, useAnimation } from 'framer-motion';
-import { nodejs, react, git, sql, typescript } from './imports';
+import { nodejs, react, git, sql, typescript, express, jest, mongodb, redux, webpack } from './imports';
 import './techstack.css';
 
 function useOnScreen(ref, rootMargin = '0px') {
@@ -67,6 +67,11 @@ function Techstack() {
         <Skills imgUrl={nodejs} title='NodeJS' />
         <Skills imgUrl={sql} title='PostgreSQL' />
         <Skills imgUrl={git} title='Git' />
+        <Skills imgUrl={express} title='Express' />
+        <Skills imgUrl={jest} title='Jest' />
+        <Skills imgUrl={mongodb} title='MongoDB' />
+        <Skills imgUrl={redux} title='Redux' />
+        <Skills imgUrl={webpack} title='Webpack' />
       </motion.div>
     </div>
   );
