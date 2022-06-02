@@ -1,6 +1,7 @@
 .trapani__header {
   display: flex;
   padding: 0 5rem 0 5rem;
+  margin-bottom: 5rem;
 }
 
 .trapani__header-content {

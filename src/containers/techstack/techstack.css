@@ -1,7 +1,7 @@
 .trapani__techstack {
   display: flex;
   flex-direction: column;
-  background: rgba(0,11,22,1)
+  background: var(--color-bg-techstack)
 }
 
 .trapani__techstack-heading {
@@ -40,6 +40,7 @@
     align-items: center;
   }
   .trapani__techstack-container_group {
+    display: flex;
     flex-direction: column;
 
   }
