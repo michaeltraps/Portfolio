@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Experience, Footer, Header, Techstack } from './containers';
 import { Navbar } from './components';
-import './App.css'
+import './App.css';
 
 const App = () => {
   return (
@@ -11,8 +11,8 @@ const App = () => {
         <Navbar />
         <Header />
       </div>
-      <Experience />
       <Techstack />
+      <Experience />
       <Footer />
     </div>
   );

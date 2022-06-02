@@ -8,6 +8,10 @@ function Techstack() {
     <div className='trapani__techstack section__padding' id='techstack'>
       <div className='trapani__techstack-heading'>
         <h2 className='gradient__text'>Techstack</h2>
+        <p className='gradient__text'>
+          I have experience across the stack, with a passion for frontend
+          technologies
+        </p>
       </div>
       <div className='trapani__techstack-container_group'>
         <Skills imgUrl={react} title='React' />

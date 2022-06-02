@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import {
+  RiMenu3Line,
+  RiCloseLine,
+  RiGithubFill,
+  RiLinkedinBoxFill,
+} from 'react-icons/ri';
 import './navbar.css';
 import logo from '../../assets/logo_75.png';
 import resume from '../../assets/Michael_Trapani_Resume.pdf';
@@ -38,6 +43,21 @@ const Navbar = () => {
         <div className='trapani__navbar-links_container'>
           <Menu />
         </div>
+      </div>
+      <div className='trapani__navbar-links_icons'>
+        <a
+          href='https://github.com/michaeltraps'
+          target='_blank'
+          rel='noreferrer'>
+          {' '}
+          <RiGithubFill size='40' />
+        </a>
+        <a
+          href='https://www.linkedin.com/in/michael-a-trapani/'
+          target='_blank'
+          rel='noreferrer'>
+          <RiLinkedinBoxFill size='40' />
+        </a>
       </div>
       <div className='trapani__navbar-menu'>
         {toggleMenu ? (

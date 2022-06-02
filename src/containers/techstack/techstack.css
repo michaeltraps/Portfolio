@@ -1,14 +1,14 @@
 .trapani__techstack {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.5rem;
+  background: rgba(0,11,22,1)
 }
 
 .trapani__techstack-heading {
   width: 100%;
-  text-align: left;
+  text-align: center;
 
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 .trapani__techstack-heading h2 {
@@ -17,11 +17,21 @@
   font-size: 40px;
   line-height: 50px;
   letter-spacing: -0.04em;
+  margin-bottom: 1rem;
+}
+
+.trapani__techstack-heading p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: -0.04em;
 }
 
 .trapani__techstack-container_group {
   display: flex;
   flex-direction: row;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (max-width:990px) {

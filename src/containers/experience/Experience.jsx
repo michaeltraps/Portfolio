@@ -8,6 +8,9 @@ const Experience = () => {
     <div className='trapani__experience section__padding' id='experience'>
       <div className='trapani__experience-heading'>
         <h2 className='gradient__text'>Experience</h2>
+        <p className='gradient__text'>
+          I am a frequent contributor to the open source community
+        </p>
       </div>
       <div className='trapani__experience-container'>
         <div className='trapani__experience-container_groupB'>

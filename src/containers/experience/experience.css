@@ -1,13 +1,14 @@
 .trapani__experience {
   display: flex;
   flex-direction: column;
+  background: var(--color-bg)
 }
 
 .trapani__experience-heading {
   width: 100%;
-  text-align: left;
+  text-align: center;
 
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .trapani__experience-heading h2 {
@@ -15,6 +16,15 @@
   font-weight: 800;
   font-size: 40px;
   line-height: 50px;
+  margin-bottom: 1rem;
+  letter-spacing: -0.04em;
+}
+
+.trapani__experience-heading p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
   letter-spacing: -0.04em;
 }
 
