@@ -1,1 +1,3 @@
-# Michael Trapani Portfolio
+# Michael Trapani | Frontend Software Engineer 
+
+https://michaeltrapani.io
