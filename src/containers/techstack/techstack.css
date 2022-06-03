@@ -40,8 +40,8 @@
     align-items: center;
   }
   .trapani__techstack-container_group {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
   }
   .trapani__techstack-container_group .trapani__techstack-container_skills-image {
