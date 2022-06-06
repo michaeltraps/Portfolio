@@ -1,10 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
-import Skills from '../../components/skills/Skills';
+import React, { useEffect, useState } from 'react';
+import { Skills } from '../../components/skills/Skills';
 import { motion, useAnimation } from 'framer-motion';
 import { nodejs, react, git, sql, typescript, express, jest, mongodb, redux, webpack } from './imports';
 import './techstack.css';
 
-function useOnScreen(ref, rootMargin = '0px') {
+function useOnScreen(ref: any, rootMargin = '0px') {
   const [isIntersecting, setIntersecting] = useState(false);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ function useOnScreen(ref, rootMargin = '0px') {
 
 function Techstack() {
   const controls = useAnimation();
-  const rootRef = useRef();
+  const rootRef = React.useRef() as React.MutableRefObject<HTMLImageElement>;
   const onScreen = useOnScreen(rootRef);
   useEffect(() => {
     if (onScreen) {

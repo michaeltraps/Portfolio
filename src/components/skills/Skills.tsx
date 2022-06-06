@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './skills.css';
 
-function Skills({ imgUrl, title }) {
+interface Props {
+  imgUrl: string,
+  title: string,
+}
+
+export const Skills: FC<Props> = ({ imgUrl, title }) => {
   return (
     <div className='trapani__techstack-container_skills'>
       <div className='trapani__techstack-container_skills-image'>
@@ -13,5 +18,3 @@ function Skills({ imgUrl, title }) {
     </div>
   );
 }
-
-export default Skills;
