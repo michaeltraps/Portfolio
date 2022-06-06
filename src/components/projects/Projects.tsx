@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './projects.css';
 
-function Projects({ imgUrl, title, github, url, description }) {
+interface Props {
+  imgUrl: string,
+  title: string,
+  github: string,
+  url?: string,
+  description: string
+}
+
+export const Projects: FC<Props> = ({ imgUrl, title, github, url, description }) => {
   return (
     <div className='trapani__experience-container_projects'>
       <div className='trapani__experience-container_projects-image'>
@@ -28,5 +36,3 @@ function Projects({ imgUrl, title, github, url, description }) {
     </div>
   );
 }
-
-export default Projects;
