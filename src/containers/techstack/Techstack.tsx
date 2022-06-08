@@ -30,6 +30,7 @@ function useOnScreen(ref: any, rootMargin = '0px') {
 
 function Techstack() {
   const controls = useAnimation();
+  // code added to address rootRef TypeScript error
   const rootRef = React.useRef() as React.MutableRefObject<HTMLImageElement>;
   const onScreen = useOnScreen(rootRef);
   useEffect(() => {

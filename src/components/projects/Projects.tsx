@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import './projects.css';
 
+// interface added for TypeScript
 interface Props {
   imgUrl: string,
   title: string,
