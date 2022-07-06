@@ -64,8 +64,7 @@ const Navbar = () => {
             onClick={() => setToggleMenu(false)}
           />
         ) : (
-          <RiMenu3Line
-            color='#fff'
+          <RiMenu3Line color='#fff'
             size={27}
             onClick={() => setToggleMenu(true)}
           />
